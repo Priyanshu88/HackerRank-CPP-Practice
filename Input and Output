@@ -1,3 +1,4 @@
+// Method 1
 #include <cmath>
 #include <cstdio>
 #include <vector>
@@ -7,11 +8,28 @@ using namespace std;
 
 
 int main() {
-    int a,b,c,sum;
-    a=1,b=2,c=7;
+
+    int sum = 0;
+    int x, y, z;
+
+    cin >> x >> y >> z;
+    sum = x + y + z;
+    cout << sum << endl;
+
+    return 0;
+}
+
+// Method 2
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a;
+    int b;
+    int c;
     cin >> a >> b >> c;
     
-    sum = a + b + c;
-    cout << sum << endl;
+    cout << a + b + c << endl;
+    
     return 0;
 }
