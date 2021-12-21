@@ -1,0 +1,21 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+	string a,b,c;
+    cin >> a;
+    cin >> b;
+    int e = a.size();
+    int f = b.size();
+    cout << e << " " << f << endl;
+    c = a + b;
+    cout << c << endl;
+    char A = a[0];
+    char B = b[0];
+    a[0] = B;
+    b[0] = A;
+    
+    cout << a << " " << b << endl;
+    return 0;
+}
