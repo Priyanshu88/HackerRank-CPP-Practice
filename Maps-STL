@@ -1,0 +1,40 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+#include <map>
+#include <set>
+using namespace std;
+
+
+int main() {
+    int q;
+    cin >> q;
+    
+    map<string,int> clas;
+    while(q--)
+    {
+        int type;
+        cin >> type;
+        string student;
+        cin >> student;
+        
+        if(type==1)
+        {
+            int x;
+            cin >> x;
+            clas[student] += x; 
+            
+        }
+        else if(type==2)
+        {
+            clas[student] = 0;
+        }
+        else
+        {
+            cout << clas[student] << endl;
+        }
+    }
+    return 0;
+}
