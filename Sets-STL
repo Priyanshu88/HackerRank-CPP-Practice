@@ -1,0 +1,38 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <set>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    int Queries;
+    set<int> query;
+    cin >> Queries;
+    
+    for (int i=0; i<Queries; ++i)
+{
+    int type, integer;
+    cin >> type >> integer;
+    
+    switch (type)
+    {
+        case 1:
+            query.insert(integer);
+            break;
+            
+        case 2:
+            query.erase(integer);
+            break;
+            
+        case 3:
+            cout << (query.find(integer) == query.end() ? "No" : "Yes") << endl;
+            break;
+    }
+}    
+    return 0;
+}
+
+
